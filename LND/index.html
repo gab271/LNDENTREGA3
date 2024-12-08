@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos y Cómics</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <div class="vandal-logo-container">
+            <i class="fa-solid fa-gamepad"></i>
+            <p id="header-title">VANDAL</p>
+        </div>
+
+        <ul id="header-menu-main-options">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="show-data.html">Show data</a></li>
+        </ul>
+
+        <ul id="header-menu" class="menu">
+            <li><a href="index.html"><strong>HOME</strong></a></li>
+            <li><a href="#populargames"><strong>CATÁLOGO DE JUEGOS</strong></a></li>
+            <li><a href="comics.html"><strong>CATÁLOGO DE COMICS</strong></a></li>
+            <li><a href="show-data.html"><strong>TU CUENTA</strong></a></li>
+        </ul>
+
+        <div id="header-hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    </header>
+
+    <div class="parallax-container">
+        <div class="parallax-layer" style="background-image: url(./img/parallax.jpg);"></div>
+        <div class="parallax-content">
+            <h1 class="rocke fade-in">¡JUEGA GRATIS Y GANA RECOMPENSAS!</h1>
+            <p class="rocke">Elige tu equipo. Sube de rango. Gana premios.</p>
+            <br>
+            <br>
+            <div>
+                <button class="stars">VER EL TRAILER</button>
+                <button class="stars" onclick="window.location.href='https://www.rocketleague.com/es-es/play';">JUEGA
+                    YA</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="videoFrame" src="https://www.youtube.com/embed/SgSX3gOrj60" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <section id="videogames" class="videogames">
+
+        <div class="games">
+            <h2 id="populargames"> JUEGOS POPULARES </h2>
+            <ul>
+                <li class="list active" data-filter="all"> Todos</li>
+                <li class="list" data-filter="pc">Juegos para ordenadores</li>
+                <li class="list" data-filter="mobile">Juegos para moviles</li>
+            </ul>
+            <div class="cardBx">
+                <div class="card" data-item="pc">
+                    <img src="img/wukong.jpg" alt="wukong">
+                    <div class="content">
+                        <h4 class="h7">Black Myth Wukong </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">59,99€</p>
+                            <a href="https://store.steampowered.com/app/2358720/Black_Myth_Wukong/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc">
+                    <img src="img/cyberpunk.jpg" alt="cyberpunk">
+                    <div class="content">
+                        <h4 class="h7">Cyberpunk 2077 </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio</p>
+                            <p class="span1">59,99€</p>
+                            <a href="https://store.steampowered.com/app/1091500/Cyberpunk_2077/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc">
+                    <img src="img/eldenring.jpg" alt="elden ring">
+                    <div class="content">
+                        <h4 class="h7">Elden Ring </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <br>
+                            <p class="span1">59,99€</p>
+                            <a href="https://store.steampowered.com/app/1245620/ELDEN_RING/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile">
+                    <img src="img/stardwevalley.jpg" alt="stardwevalley">
+                    <div class="content">
+                        <h4 class="h7">Stardew Valley </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">13,99€</p>
+                            <a href="https://store.steampowered.com/app/413150/Stardew_Valley/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc">
+                    <img src="img/ghostof.jpg" alt="ghostof">
+                    <div class="content">
+                        <h4 class="h7">Ghost of tsushima </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">59,99€</p>
+                            <a
+                                href="https://store.steampowered.com/app/2215430/Ghost_of_Tsushima_VERSIN_DEL_DIRECTOR/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc">
+                    <div class="discount-tag">-50%</div>
+                    <img src="img/forzahorizon.jpg" alt="forza">
+                    <div class="content">
+                        <h4 class="h7">Forza Horizon 5 </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">29,99€</p>
+                            <a href="https://store.steampowered.com/app/1551360/Forza_Horizon_5/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc">
+                    <img src="img/REvillage.jpg" alt="REvillage">
+                    <div class="content">
+                        <h4 class="h7">Resident evil village </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">39,99€</p>
+                            <a href="https://store.steampowered.com/app/1196590/Resident_Evil_Village/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="pc">
+                    <div class="discount-tag">-27%</div>
+                    <img src="img/TBOI.jpg" alt="TBOI">
+                    <div class="content">
+                        <h4 class="h7">The Binding Of Isaac</h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">48,60€</p>
+                            <a
+                                href="https://store.steampowered.com/app/1426300/The_Binding_of_Isaac_Repentance/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile">
+                    <div class="discount-tag">-50%</div>
+                    <img src="img/terraria.jpg" alt="terraria">
+                    <div class="content">
+                        <h4 class="h7">Terraria </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">3,99€</p>
+                            <a href="https://store.steampowered.com/app/105600/Terraria/">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile">
+                    <img src="img/CODmobile.jpg" alt="COD">
+                    <div class="content">
+                        <h4 class="h7">Call Of Duty Mobile </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">Gratis</p>
+                            <a href="https://www.callofduty.com/es/mobile">Juega ya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile">
+                    <img src="img/diablo.jpg" alt="diablo">
+                    <div class="content">
+                        <h4 class="h7">Diablo Immortal </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">Gratis</p>
+                            <a href="https://diabloimmortal.blizzard.com/es-es/">Juega ya</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" data-item="mobile">
+                    <img src="img/GTASA.jpg" alt="GTA">
+                    <div class="content">
+                        <h4 class="h7">GTA: San Andreas - Definitive </h4>
+                        <div class="progress-line"><span></span></div>
+                        <div class="info">
+                            <p>Precio<br></p>
+                            <p class="span1">19,99€</p>
+                            <a
+                                href="https://play.google.com/store/apps/details?id=com.rockstargames.gtasa.de&hl=es&pli=1">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- inicio formulario show data con scroll animation -->
+        <div class="container mt-5 scroll-animation">
+            <h3 class="formu">Suscríbete a nuestra pagina:</h3>
+            <form id="registration-form">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                    <span id="required-name">* este campo es obligatorio</span>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="text" class="form-control" id="email" name="email">
+                    <span id="required-email">* este campo es obligatorio</span>
+                    <span id="invalid-email">* el email no es valido</span>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="password" name="password">
+                    <span id="required-password">* este campo es obligatorio</span>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+        <!-- fin del formulario -->
+        <!-- CRUD -->
+        <br>
+        <br>
+        <div id="videogames-list">
+
+        </div>
+        <form action="*" id="videogames-register">
+            <label for="name2">Juegos que te gustaria ver en la pagina</label>
+            <input type="text" name="name2" id="name2">
+
+            <label for="gender">género del juego</label>
+            <input type="text" name="gender" id="gender">
+
+            <button type="submit">añadir juegos</button>
+        </form>
+        <script src="js/crud.js"></script>
+        <!-- termina el CRUD -->
+
+        <!-- comienzo footer -->
+    </section>
+
+    <footer class="footer">
+        <div class="container3">
+            <div class="row">
+                <div class="footer-col">
+                    <h5>Enlaces utiles</h5>
+                    <ul>
+                        <li><a href="#">politica de privacidad</a></li>
+                        <li><a href="#">Terminos de uso</a></li>
+                        <li><a href="#">Información legal</a></li>
+                        <li><a href="#">Programa de afiliación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Ayuda</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Métodos de pago</a></li>
+                        <li><a href="#">Stock</a></li>
+                        <li><a href="#">Estado de la orden</a></li>
+                        <li><a href="#">Empresa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>Sobre nosotros</h5>
+                    <ul>
+                        <li><a href="#">Licencias</a></li>
+                        <li><a href="#">Obtención de claves</a></li>
+                        <li><a href="#">Plataformas</a></li>
+                        <li><a href="#">Precio</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>follow us</h5>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/vandalonline/?locale=es_ES"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/VandalOnline?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/vandalnet/?hl=es"><i class="fab fa-instagram"></i></a>
+                        <a href="https://es.linkedin.com/company/vandalnet"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- fin del footer -->
+    <script src="js/toogle-menu.js"></script>
+    <script src="js/validate.js"></script>
+    <script src="js/boton.js"></script>
+    <script src="js/cerrarboton.js"></script>
+    <script src="js/scrollanimation.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/fadein.js"></script>
+</body>
+
+</html>

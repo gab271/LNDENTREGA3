@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    
+    padding: 10px;
+}
+
+.comic {
+    margin: 130px;
+    background-color: white;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 30% 20px 10px;
+   
+    
+}
+
+.comicson{
+    text-align: justify;
+    flex: 1;
+}
+
+.comic img{
+    width: 100%;
+    margin: 10px;
+}
+
+.comicsbutton{
+    border: 0px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: orange;
+    margin-left: 150px; 
+}
+
+
+
+
+/* Móvil (hasta 600px de ancho) */
+@media (max-width: 600px) {
+    section {
+        padding: 5px; /* Reducir el padding para aprovechar mejor el espacio */
+    }
+
+    .comic {
+        margin: 10px; /* Menos margen en móviles */
+        flex-direction: column; /* Los elementos se apilan en una columna */
+        gap: 20px; /* Reducir el espacio entre los elementos */
+    }
+
+    .comicson {
+        text-align: left; /* Alinear el texto a la izquierda para facilitar la lectura */
+        flex: unset; /* Eliminar el "flex" para los elementos hijos en móvil */
+    }
+
+    .comic img {
+        width: 100%; /* Asegurarse que las imágenes no se desborden */
+        margin: 5px 0; /* Reducir los márgenes de las imágenes */
+    }
+
+    button {
+        padding: 8px 30px; /* Hacer los botones más pequeños para móviles */
+    }
+}
+
+/* Tablet (de 601px a 900px de ancho) */
+@media (min-width: 601px) and (max-width: 900px) {
+    section {
+        padding: 10px;
+    }
+
+    .comic {
+        margin: 20px 10%; /* Ajustar márgenes para tabletas */
+        flex-direction: row; /* Los elementos vuelven a una fila */
+        gap: 30px; /* Espaciado moderado entre los elementos */
+    }
+
+    .comicson {
+        text-align: justify;
+        flex: 1;
+    }
+
+    .comic img {
+        width: 90%; /* Las imágenes aún se ajustan, pero con un poco de margen */
+        margin: 10px;
+    }
+
+    button {
+        padding: 10px 40px; /* Tamaño adecuado de botones para tabletas */
+    }
+}
+
+/* Escritorio (más de 900px de ancho) */
+@media (min-width: 901px) {
+    section {
+        padding: 20px;
+    }
+
+    .comic {
+        margin: 20px 15%; /* Margenes más amplios en escritorio */
+        flex-direction: row; /* Los elementos se alinean en una fila */
+        gap: 50px; /* Espaciado amplio entre los elementos */
+    }
+
+    .comicson {
+        text-align: justify;
+        flex: 1;
+    }
+
+    .comic img {
+        width: 80%; /* Las imágenes ocupan un poco menos de espacio en escritorio */
+        margin: 10px;
+    }
+
+    button {
+        padding: 10px 50px; /* Botón de tamaño grande para escritorio */
+    }
+}
+/* Estilos para pantallas pequeñas (hasta 480px de ancho) */
+@media (max-width: 480px) {
+    .comicsbutton {
+        padding: 10px 30px; /* Reducir el padding */
+        margin-left: 0; /* Eliminar margen izquierdo */
+        display: block; /* Asegurarse de que el botón se alinee verticalmente */
+        width: 100%; /* Hacer que ocupe todo el ancho disponible */
+        text-align: center; /* Centrar el texto dentro del botón */
+    }
+}
+
+/* Estilos para tabletas pequeñas (hasta 768px de ancho) */
+@media (max-width: 768px) {
+    .comicsbutton {
+        padding: 12px 40px; /* Ajustar el padding para pantallas medianas */
+        margin-left: auto;
+        margin-right: auto; /* Centrar el botón */
+        display: block; /* Asegurarse de que el botón se alinee correctamente */
+        width: auto; /* El botón puede tener su tamaño original */
+    }
+}
+
+/* Estilos para pantallas grandes (pantallas de 1024px o más) */
+@media (min-width: 1024px) {
+    .comicsbutton {
+        padding: 12px 60px; /* Aumentar el padding para pantallas grandes */
+        margin-left: 150px; /* Mantener el margen izquierdo original */
+        display: inline-block; /* Alineación por defecto */
+    }
+}
